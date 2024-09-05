@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royale Taste Game</title>
+  <link rel="stylesheet" href="game-styles.css">
+</head>
+<body>
+  <div id="game-container">
+    <header>
+      <!-- Centered Logo -->
+      <img src="images.jpg" alt="Restaurant Logo" id="game-logo">
+      <h1>Welcome to Royale Taste!</h1>
+      
+      <!-- New Icon Button -->
+      <a href="spin.html" id="what-to-eat-button">🍽️ What Should I Eat Today?</a>
+      
+      <div id="login-register">
+        <button id="login-button">Login</button>
+        <button id="register-button">Register</button>
+      </div>
+    </header>
+    
+    <section id="difficulty-selection">
+      <label for="difficulty">Choose Difficulty:</label>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+        <option value="intense">Intense</option>
+      </select>
+    </section>
+    
+    <section id="game-screen"></section>
+    
+    <section id="game-controls">
+      <button id="start-game">Start Game</button>
+      <p id="score">Score: 0</p>
+      <p id="high-score">High Score: 0</p>
+      <button id="restart-button" class="hidden">Restart</button>
+    </section>
+    
+    <footer>
+      <a href="index.html">MENU</a>
+    </footer>
+    
+    <div id="game-end-popup" class="hidden">
+      <p>😂</p>
+      <p id="final-score">Final Score: 0</p>
+    </div>
+  </div>
+  <script src="game-script.js"></script>
+</body>
+</html>

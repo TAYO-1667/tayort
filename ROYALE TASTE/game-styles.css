@@ -1,0 +1,147 @@
+/* Reset some default styles */
+body, h1, p, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+#game-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#game-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 50%; /* Makes the logo circular */
+    box-shadow: 0 0 15px rgba(156, 39, 176, 0.8); /* Purple glow */
+    transition: box-shadow 0.3s;
+}
+
+#game-logo:hover {
+    box-shadow: 0 0 20px rgba(156, 39, 176, 1); /* Enhanced glow on hover */
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#what-to-eat-button {
+    background-color: #9c27b0;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+#what-to-eat-button:hover {
+    background-color: #7b1fa2;
+}
+
+#login-register {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #9c27b0;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #7b1fa2;
+}
+
+#difficulty-selection {
+    margin: 20px 0;
+}
+
+#difficulty {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#game-screen {
+    border: 2px solid #9c27b0;
+    height: 400px;
+    position: relative;
+    margin: 20px 0;
+    background-color: #fff;
+}
+
+#game-controls {
+    margin: 20px 0;
+}
+
+#score, #high-score {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+#restart-button.hidden {
+    display: none;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+#menu-button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#menu-button:hover {
+    background-color: #388e3c;
+}
+
+#game-end-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 2px solid #9c27b0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    display: none; /* Hide popup initially */
+}
+
+#game-end-popup.visible {
+    display: block; /* Show popup when game ends */
+}

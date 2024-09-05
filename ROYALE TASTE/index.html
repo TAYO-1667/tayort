@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Experience the best cuisine with Royale Taste. Order online now!">
+  <meta name="keywords" content="restaurant, food, dining, order online, cuisine">
+  <title>Royale Taste</title>
+  <link rel="stylesheet" href="RT.CSS">
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+  <!-- Header and Navigation -->
+  <header id="main-header" role="banner">
+    <div class="logo-container">
+      <img src="images.jpg" alt="Royale Taste Logo" class="logo">
+      <h1>Royale Taste</h1>
+    </div>
+    <nav id="navbar" role="navigation">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="order.html" class="order-button">Order Online</a></li>
+      </ul>
+    </nav>
+    <a href="https://wa.me/08094220174" class="whatsapp-button" target="_blank" aria-label="Contact us on WhatsApp">
+      <img src="whatsapp-icon.png" alt="WhatsApp">
+    </a>
+  </header>
+
+  <!-- Hero Section with Background Image -->
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <h1>Welcome to Royale Taste</h1>
+      <p>Experience the best cuisine with us.</p>
+      <a href="order.html" class="order-button">Order Online</a>
+    </div>
+  </section>
+
+  <!-- Image Slider Section -->
+  <section class="slider-section">
+    <div class="slider">
+      <div class="slide fade">
+        <img src="dish1.jpg" alt="Dish 1">
+        <div class="slide-text">Dish 1 - Delicious Taste</div>
+      </div>
+      <div class="slide fade">
+        <img src="dish2.jpg" alt="Dish 2">
+        <div class="slide-text">Dish 2 - Unique Flavors</div>
+      </div>
+      <div class="slide fade">
+        <img src="dish3.jpg" alt="Dish 3">
+        <div class="slide-text">Dish 3 - Special Recipe</div>
+      </div>
+    </div>
+    <div class="dots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We are passionate about bringing authentic flavors to your table. Our story started years ago...</p>
+      <img src="founder.jpg" alt="Founder Picture" class="founder-image">
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="menu-section">
+    <h2>Our Menu</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="dish1.jpg" alt="Dish 1" class="hover-scale">
+        <div class="gallery-item-info">Dish 1 - $15</div>
+      </div>
+      <div class="gallery-item">
+        <img src="dish2.jpg" alt="Dish 2" class="hover-scale">
+        <div class="gallery-item-info">Dish 2 - $20</div>
+      </div>
+      <div class="gallery-item">
+        <img src="dish3.jpg" alt="Dish 3" class="hover-scale">
+        <div class="gallery-item-info">Dish 3 - $25</div>
+      </div>
+    </div>
+    <div class="cart">
+      <h3>Your Cart</h3>
+      <ul id="cart-items"></ul>
+      <button id="checkout-button">Checkout</button>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Phone: <a href="tel:+08094220174">08094220174</a></p>
+    <p>Email: <a href="mailto:info@royaletaste.com">info@royaletaste.com</a></p>
+    <p>Location: <a href="https://maps.app.goo.gl/Nh1tUfTFfgGUvMWk9" target="_blank" style="color: purple;">CLICK HERE FOR LOCATION</a></p>
+    <div class="contact-form">
+      <form action="submit_form.php" method="post" id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+    <div class="map">
+      <iframe src="https://maps.app.goo.gl/Nh1tUfTFfgGUvMWk9" width="600" height="450" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Royale Taste. All rights reserved.</p>
+    <div class="social-media">
+      <a href="#" class="social-icon"><img src="facebook-icon.png" alt="Facebook"></a>
+      <a href="#" class="social-icon"><img src="instagram-icon.png" alt="Instagram"></a>
+      <a href="#" class="social-icon"><img src="twitter-icon.png" alt="Twitter"></a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
